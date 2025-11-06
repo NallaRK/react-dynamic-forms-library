@@ -1,0 +1,58 @@
+{
+    "name": "@react-dynamic-forms/validators",
+    "version": "0.1.0",
+    "description": "Validation engine and rules for React Dynamic Forms",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "@react-dynamic-forms/core": "workspace:*"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.45",
+        "react": "^18.2.0"
+    },
+    "keywords": [
+        "validation",
+        "forms",
+        "react",
+        "dynamic-forms",
+        "validator"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/react-dynamic-forms-library.git",
+        "directory": "packages/validators"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/react-dynamic-forms-library/issues"
+    },
+    "homepage": "https://github.com/yourusername/react-dynamic-forms-library/tree/main/packages/validators#readme"
+}
