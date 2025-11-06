@@ -21,6 +21,9 @@ export default [
         Buffer: 'readonly',
         __dirname: 'readonly',
         __filename: 'readonly',
+        document: 'readonly',
+        window: 'readonly',
+        React: 'readonly',
       },
     },
     plugins: {
